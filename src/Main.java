@@ -17,6 +17,16 @@ import java.awt.*;
  */
 public class Main {
     public static void main(String[] args) {
+        Employee employeeOne = new Employee("Daniel Roberts",
+                "Stockholm",35000,34);
+
+        Employee employeeTwo = new Employee("Matt Johnson",
+                "Malmö",30000,32);
+
+        employeeTwo.raiseSalary();
+
+        System.out.println(employeeOne.salary);
+        System.out.println(employeeTwo.salary);
 
     }
 }
