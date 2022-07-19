@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-     Tree myFavoriteOakTree  = new Tree(120,12, TreeType.OAK);
-     myFavoriteOakTree.announceTallTree();
+     Tree myFavoriteMapleTree = new Tree(90,30,TreeType.MAPLE);
 
-        Tree myFavoriteMapleTree = new Tree(90,30,TreeType.MAPLE);
-        myFavoriteMapleTree.announceTallTree();
+        System.out.println(myFavoriteMapleTree.getTreeType());
+        System.out.println(myFavoriteMapleTree.getHeightFt());
+        System.out.println(myFavoriteMapleTree.getTrunkDiameterInches());
 
-        System.out.println( Tree.TRUNK_COLOR);
-        Tree.announceTree();
+        myFavoriteMapleTree.grow();
     }
 }
