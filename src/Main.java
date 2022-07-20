@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * When retrieving items from an arraylist, sometimes you get an error.
  *
@@ -21,16 +23,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        ModArrayList listy = new ModArrayList();
-        listy.add(0);
-        listy.add(10);
-        listy.add(20);
-        listy.add(30);
+        OddArrayList oddListy = new OddArrayList(1,2,3,4,7,9,-13);
 
-        System.out.println(listy.getUsingMod(1));
-        System.out.println(listy.getUsingMod(-2));
-        System.out.println(listy.getUsingMod(40));
+        System.out.println(oddListy.add(2));
 
+        ArrayList<Integer> listy = new ArrayList<>();
+
+        listy.add(1);
+        listy.add(2);
+        listy.add(3);
+        listy.add(4);
+        listy.add(7);
+        listy.add(9);
+        listy.add(-13);
+
+        System.out.println(listy);
 
     }
 }
