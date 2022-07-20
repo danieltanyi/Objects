@@ -2,7 +2,7 @@ public class Salesperson extends Employee{
     private double commissionPercentage;
 
     public Salesperson(String name, double salary, int age, double commissionPercentage) {
-       super(name,salary,age); // we use super keyword since saleperson inherit from Employee
+       super(name, (int) salary,age); // we use super keyword since saleperson inherit from Employee
         this.commissionPercentage = commissionPercentage;
     }
 
